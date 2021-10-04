@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./weatherStyles.css">
+</head>
+<body onload="getDateTime()">
+    <div id="container">
+        <div id="dayDateTimeContainer">
+            <h1 id="day"></h1>
+            <h1 id="date"></h1>
+            <h2 id="time"></h2>
+        </div>
+        
+        <div class="weatherHolder">
+            <div class="weatherHolderFirstColumn">           
+                <p id="city1">Austin</p>
+                <!-- <p id="country1">USA</p>               -->
+                <!-- <div id="weatherIconContainer">
+                    
+                </div> -->
+                <div class="humidityContainer">
+                    <img id="humidityIcon">
+                    <p id="humidityText">17%</p>
+                </div>
+                <div class="windSpeedContainer">
+                    <img id="windSpeedIcon">
+                    <p id="windSpeedText">25</p>
+                </div>
+            </div>
+
+            <div class="weatherHolderSecondColumn">
+                <h1 ><span id="temperatureOne">22</span>&deg;C</h1>
+                <img id="weatherIcon">
+                <div class="maxMinTemp">
+                    
+                    <p><span id="temperatureMin"></span>&deg;C</p>
+                    <p><span id="temperatureMax"></span>&deg;C</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="futureDaysContainer">
+            <div class="futureDayHolder DayOne">
+                <p id="minTempFutureDayOne"></p>
+                <p id="maxTempFutureDayOne"></p>
+                <img id="weatherIconFutureDayOne">
+                <p id="windSpeedTextFutureDayOne"></p>
+                <p id="weatherFutureDescriptionDayOne"></p>
+            </div>
+            <div class="futureDayHolder DayTwo">
+                <p id="minTempFutureDayTwo"></p>
+                <p id="maxTempFutureDayTwo"></p>
+                <img id="weatherIconFutureDayTwo">
+                <p id="windSpeedTextFutureDayTwo"></p>
+                <p id="weatherFutureDescriptionDayTwo"></p>
+            </div>
+            <div class="futureDayHolder DayThree">
+                <p id="minTempFutureDayThree"></p>
+                <p id="maxTempFutureDayThree"></p>
+                <img id="weatherIconFutureDayThree">
+                <p id="windSpeedTextFutureDayThree"></p>
+                <p id="weatherFutureDescriptionDayThree"></p>
+            </div>
+            <div class="futureDayHolder DayFour">
+                <p id="minTempFutureDayFour"></p>
+                <p id="maxTempFutureDayFour"></p>
+                <img id="weatherIconFutureDayFour">
+                <p id="windSpeedTextFutureDayFour"></p>
+                <p id="weatherFutureDescriptionDayFour"></p>
+            </div>
+            <div class="futureDayHolder DayFive">
+                <p id="minTempFutureDayFive"></p>
+                <p id="maxTempFutureDayFive"></p>
+                <img id="weatherIconFutureDayFive">
+                <p id="windSpeedTextFutureDayFive"></p>
+                <p id="weatherFutureDescriptionDayFive"></p>
+            </div>
+
+        </div>
+        <div class="buttonContainer">
+            <button onclick="currentApi('Pulau Pinang')">Pulau Pinang</button>
+            <button onclick="currentApi('Kuala Lumpur')">Kuala Lumpur</button>
+            <button onclick="currentApi('Johor')">Johor</button>
+            <button onclick="currentApi('Sabah')">Sabah</button>
+            <button onclick="currentApi('Sarawak')">Sarawak</button>
+        </div>
+       
+        
+        
+
+        
+    </div>
+    <script src="./weatherScript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
+
